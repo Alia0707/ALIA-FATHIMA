@@ -7,7 +7,7 @@ payload = json.dumps({
 }).encode("utf-8")
 
 req = urllib.request.Request(
-    "<https://httpbin.org/post>",
+    "https://httpbin.org/post",
     data=payload,
     headers={"Content-Type": "application/json"},
     method="POST"
